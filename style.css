@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
+}
+body{
+  /*  fondo background inyectado */
+    text-decoration: none;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%231190f4' fill-opacity='0.09' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                       ESTILOS DE LA PAGINA index.html
+                                                  &
+                                      ENCABEZADO DE TODAS LAS PAGINAS HTML
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.conte {
+  width: 100%;
+  height: 100%;
+}
+ header
+{
+  height: 100vh;
+}
+.conte__video  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  z-index: 0;
+}
+/* sobre caoa del video */
+.conte__overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0a60c2;
+  mix-blend-mode: overlay;
+}
+/* animacion menu */
+.conte__menu--barraMenu li :hover {
+  transition:0.50s;
+  background-color: rgba(5, 176, 255, 0.815);
+}
+/* estilos menu */
+.conte__menu--barraMenu li a {
+   text-transform: capitalize;
+   text-decoration: none;
+   color: rgb(245, 245, 245);
+   text-align: center;
+   border-radius: 30px;
+   padding: 10px;
+   
+    }
+li{
+  padding: 3em;
+  display: inline;
+}
+.conte__menu--barraMenu {
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+   margin: 0 auto;
+   z-index: 10000;
+   position: absolute;
+   top: 30px;
+  }
+/* estilo logo */
+.conte__logo {
+   display: flex;
+   align-items: center;
+   top: 250px;
+   justify-content: center;
+   position: relative;
+   z-index: 10;
+   cursor: pointer;
+   text-decoration: none;
+  }
+/* estilos del titulo    */
+
+
+.conte__logo a{ 
+  text-decoration: none;
+}
+  .conte__logo--titulo  h1 {
+  color: #fff;
+  text-transform: capitalize;
+   z-index: 10;
+   font-size: 3em;
+   font-weight: 700;
+   line-height: 1em;
+
+}
+.conte__logo--icono{
+   height: 150px;
+   width: 150px;
+  
+}
+/*-----------------------------------------------  estilos del menu de las redes*----------------------------------------------------------*/
+.navRedes__ul li  a:hover
+{
+   transform: scale(0.5) translateY(-15px);
+}
+.navRedes__ul li a{
+   display: inline-block;
+   margin-right: 20px;
+   filter: invert(1);
+   transform: scale(0.5);
+   transition: 0.5s; 
+}
+.navRedes{
+   position: absolute;
+   display: inline;
+   z-index: 10;
+   bottom: 10em;
+   right: 20px;
+   height: -40;
+
+}
+
+ /*------------------------------------------ estilos del contenido main  iNDEX.HTML------------------------------------------------------*/
+.contenido{
+  position: relative;
+}
+h2{
+ font-size: 40px;
+ color: #bbd5f7;
+ text-align: center;
+}
+
+.parafoPrincipalPresentacion{
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: 10px;
+  color: rgb(128, 157, 170);
+}
+
+
+
+/*------------------------------------------  estilos del footer de todas las paginas html ------------------------------------------------*/
+.footer  p{
+  color: aliceblue;
+  display: flex;
+  float: right;
+  margin: 0;
+
+}
+.footer a{
+  color: rgb(67, 114, 155);
+  padding-top: 50px;
+
+}
+.pngInicio img{
+  float: right;
+  margin-top: -50px;
+  margin-right: 20px;
+}
+/*  estilos del formulario de contacto index */
+.form-register {
+  width: 400px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'sans-serif';
+  color: white;
+  box-shadow: 7px 13px 37px rgb(71, 70, 143);
+  margin-bottom: 200px;
+}
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.controls {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'sans-serif';
+  font-size: 18px;
+  color: white;
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+
+}
+
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+#texArea{
+  resize:none;
+  background-color: #24303c ;
+  border: 1px solid #1f53c5;
+  font-family: 'sans-serif';
+
+}
+.form-register .boton  {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 5px;
+  color: white;
+  margin: 16px 0;
+  font-size: 15px;
+  box-shadow: 7px 13px 37px rgb(71, 70, 143);
+
+}
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                       ESTILOS DE LA PAGINA CONTACTANOS.HTML
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+
+
+
+.contacto h1{
+  padding-top: 20px;
+  padding-left: 10px;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  line-height: 1em;
+  font-family: 'Poppins'
+}
+.contacto p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: 20px;
+  color: rgb(128, 157, 170);
+  text-align: center;
+}
+.contacto h2{
+  font-size: 30px;
+  color: #5d87fa;
+  margin-left: 30px;
+}
+
+.contacto h3{
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: 10px;
+  color: rgb(248, 248, 248);
+  padding-left: 40px;
+}
+.contacto h5{
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: 10px;
+  color: rgb(128, 157, 170);
+}
+/* estilos de formulario de contacto (contactanos.html) */
+  .contenido__form{  
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  
+  }
+
+    .contenido__form--estilos{
+    width: 20rem;
+    background: #24303c;
+    padding: 30px;
+    margin-left: 20em;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'sans-serif';
+    color: white;
+    box-shadow: 7px 13px 37px rgb(71, 70, 143);
+    left:30px;
+    margin: 20px;
+  }
+  .contenido__form--estilos h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'sans-serif';
+    font-size: 18px;
+    color: white;
+  }
+
+  .contenido__form--estilos p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+
+  }
+
+  .contenido__form--estilos a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .contenido__form--estilos a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  #texArea{
+    resize:none;
+    background-color: #24303c ;
+    border: 1px solid #1f53c5;
+    font-family: 'sans-serif';
+
+
+  }
+  .contenido__form--estilos .boton  {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 5px;
+    color: white;
+    margin: 16px 0;
+    font-size: 15px;
+    box-shadow: 7px 13px 37px rgba(26, 24, 131, 0.856);
+
+  }
+  
+
+
+
+
+/*--------------------------------------------------------------------------------------------.     ---------------------------------   ----------------------------  ---------------------------------------------------------------------------------------------------------  --------------------------------------         ----             ---                                                     ------------------------------------------EstilosDeLaPaginaQuienesSomos------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.quienesSomos__article p{
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: 20px;
+  color: rgb(17, 93, 163);
+  text-align: center;
+   
+  
+}
+
+.quienesSomos__article h2{
+ 
+  padding-top: 30px;
+  text-decoration:overline;
+}
+ .quienesSomos__article--inicioQuienes img{
+  margin-right: 50px;
+  margin-top: -50px;
+  width: 50;
+  height: 50; 
+}
+/*--------------------------------------------------------------------------------------------.     ---------------------------------   ----------------------------  ---------------------------------------------------------------------------------------------------------  --------------------------------------         ----             ---                                                     ------------------------------------------EstilosDeLaPaginaNuestrosServicios------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.servicios img  {
+  width: 100%; 
+  height: auto;
+ ;
+
+ }
+ .servicios h2{
+  margin-bottom: .5em;
+  margin: .5em;
+ }
+ .nuestrosServicios__gridContainer{
+  display: grid;
+  
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+ 
+ }
+ .nuestrosServicios__gridContainer--tipo{
+  position: relative;
+ }
+ .nuestrosServicios__gridContainer--foto {
+  line-height: 0;
+  overflow: hidden;
+ 
+  
+ }
+ .nuestrosServicios__gridContainer--foto img{
+  filter: blur(0px);
+   transition: filter 0.3s ease-in; 
+  transform: scale(1.1);
+  
+ }
+ .nuestrosServicios__gridContainer__tipo--h3{
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(0, 42, 90, 0.445);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+ .nuestrosServicios__gridContainer--tipo:hover .nuestrosServicios__gridContainer__tipo--h3 {
+  opacity: 1;
+ }
+ .nuestrosServicios__gridContainer--tipo:hover .nuestrosServicios__gridContainer--foto{
+  filter: blur(2px);
+ } 
+ footer img{
+   float: right;
+  margin-top: -50px;
+  margin-right: 20px;
+ } 
+
+
+ /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                       estilos de la pagina trabajos realizados
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+.trabajos img {
+  height: 300px;
+  padding-top: 30px;
+  display:block;
+  margin: auto;
+
+ }
+ .TrabajosRealizado__h2 {
+   font-size: 15px;
+   text-align: center;
+   padding-top: 50px;
+ }
+ .trabajos p{
+   color: rgb(116, 116, 190);
+   text-align: center;
+ }
+ footer img{
+  float: right;
+  margin-top: -50px;
+  margin-right: 20px;
+ }
+
+
+
+
+/* medidas para pantalla medianas,modifica el pading de los elementos li */
+@media only screen and (max-width: 1190px) {
+  .conte__menu--barraMenu li  {
+    padding: 2em;
+}
+}
+
+@media only screen and (max-width: 1030px) {
+  .conte__menu--barraMenu li  {
+    padding: 1em;
+}
+}
+/* esta media query es para mas adelante agrgarle java scrip y hacer un menu interactivo (cuando lo aprenda xD ) */
+
+@media only screen and (max-width: 871px) {
+  .conte__menu--barraMenu{
+    display: none;
+  }
+  .navRedes__ul li{
+    padding: 2em;
+  }
+  /* mapa contactanos */
+  .contenido__form
+  {
+
+    flex-direction: column;
+  }
+}
+/*--------------------------------------------------------------------------------------------.     ---------------------------------   ----------------------------  ---------------------------------------------------------------------------------------------------------  --------------------------------------         ----             ---                                                     -----------------------------------------""""""Media-Queries""""------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* modificacion para nav redes */
+@media only screen and (max-width: 470px){
+  .navRedes__ul li{
+  padding: 1em;
+}
+/* form de contactanos.html */
+.form-register {
+  width: 300px;
+}
+/* paraquitar el logo en una resulucion reducida,para una mejor experiencia del usuario */
+  .conte__logo--icono{
+    display: none;
+  }
+  /* modificacion del titulo */
+  h1{
+    text-align: center;
+  }
+  /* iframe contactanos.index */
+  .contenido__form iframe{
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 350px){
+  .contenido__form iframe{
+    width: 250px;
+  }
+  .contenido__form--estilos{
+    width: 15rem;
+  }
+  .navRedes__ul li{
+    padding: 0px;
+  }
+}

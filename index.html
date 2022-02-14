@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="multimedia/imagenes/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <title>Visuales</title>
+</head>
+<body>
+  <header>
+     <section class="conte">
+        <video class="conte__video"   autoplay muted loop src="multimedia/viedeos/video.menu.mp4"></video>
+        <div class="conte__overlay"></div>
+        <div class="conte__logo">
+           <a  class="conte__logo--icono" href="index.html"><img  src="multimedia/imagenes/logo.png" alt="" height="150px" width="150px"></a>
+           <a class="conte__logo--titulo" href="index.html"><h1 >Servicios Profesional De Drones</h1></a>
+           </div>        
+        <div class= " conte__menu--barraMenu">
+             <nav>
+                <ul>
+                   <li ><a class="conte__menu"  href="index.html">Inicio</a></li>
+                   <li ><a class="conte__menu" href="quienessomos.html">Quienes somos</a></li>
+                    <!-- target blank en un futuro cuando actualice la pagina y ponga artículos el usuario no abandone la pagina principal si cierra el articulo (el atributo "rel" es para evitar un supuesto ataque)-->
+                   <li><a class="conte__menu" href="nuestrosservicios.html" target="_blank" rel="noopener noreferrer">Nuestros servicios</a></li>
+                   <li ><a class="conte__menu" href="trabajosrealizados.html">Trabajos realizados</a></li>
+                   <li ><a class="conte__menu" href="contactanos.html">Contactanos</a></li>
+                </ul>
+              </nav>     
+          </div>             
+          
+          <div class="navRedes">
+            <nav>
+              <ul class="navRedes__ul">
+                 <li class="navRedes__li--face"><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+                 <li class="navRedes__li--twitter"><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+                 <li class="navRedes__li--instagram"><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+              </ul> 
+           </nav>
+          </div>
+      </div>
+    </section>
+  
+  </header>
+ 
+  <main class="principal__index">
+  <section class="contenido">
+    <h2>
+      Nuestros Objetivos
+    </h2>
+      <!-- <img class="imagenParrafo" src="multimedia/imagenes/foto.de.parrafo.principal.png" alt="" width="600" height="600"> -->
+      <p class="parafoPrincipalPresentacion" >
+        Hoy un video o una fotografía realizada con el Dron presenta una forma moderna de comunicar y presentar tu negocio o tu proyecto. Las diferentes perspectivas, la investigación sin precedentes con el Dron, harán que la presentación sea sorprendente y cautivadora.
+        <br>
+        Visuales ofrece servicios de video y fotografía traduciendo en imágenes la esencia de la comunicación. Visuales se asegura de escuchar las necesidades específicas, realizar el presupuesto en el lugar de interés para el rodaje, evaluar la posibilidad real de orientar la toma más acorde a tus necesidades, evaluar el tiempo y la mejor ejecución lumínica de las características del objeto o lugar de interés.
+         <br>
+        Visuales está en posesión de la autoriszación de la Administración Nacional de Aviación Civil y la cobertura del seguro para este tipo de operaciones y tiene la competencia necesaria para solicitar y obtener de forma rápida y segura las autorizaciones de las Autoridades de Seguridad Pública para realizar vuelos también en la ciudad.
+      </p>
+      <!-- formulario de contacto sin conexion  por el momento al email -->
+      <form >
+         <section class="form-register">
+           <h4>Contactanos</h4>
+           <label for="name">Nombre:</label>
+           <input class="controls" type="text" name="nombres" id="nombre" placeholder="Nombre">
+           <label for="email">Email:</label>
+           <input class="controls" type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com">
+           <label for="number">Telefono: </label>
+           <input class="controls" type="tel" name="telefono" id="telefono" placeholder="Telefono">
+           <label for="mensaje">Mensaje:</label>
+           <textarea class="controls" id="texArea" cols="50" rows="10" placeholder="Dejanos tu mensaje"></textarea>              
+           <label for="checkbox"> <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p></label>
+           <input  type="checkbox" id="checkbox" required > 
+           <label for="boton"></label>
+           <input class="boton" id="reset" type="reset" name="reset" value="reset" >
+           <input class="boton" id="submit" name="submit" type="submit" value="Enviar">        
+        </section>
+       </form>        
+     <!-- icono al inicio --> 
+     <div class="pngInicio" >  
+       <a href="index.html"><img src="multimedia/imagenes/iconos/inicio.png" alt="" width="50" height="40"></a> 
+     </div>
+</main>
+       <!-- pie de pagina -->
+
+<footer class="footer">
+  <!-- footer con link a privacy y términos de servicios (html) y copyright  -->
+  <p>
+    copyright  © Visuales 2022
+  </p>
+  <a href="privacidad.html">Privacy Policy</a>
+  <br>
+  <a href="terminos-y-condiciones.html">Terms of Service</a>
+</footer>
+</body>
+</html> 
+<script>
+
+</script>
