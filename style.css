@@ -1,21 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Redressed&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Redressed&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  
+
 }
-body{
+
+  main {
   /*  fondo background inyectado */
     text-decoration: none;
     background-color: #000000;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%231190f4' fill-opacity='0.09' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     }
 
-    
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
                                        ESTILOS DE LA PAGINA index.html
@@ -25,10 +26,6 @@ body{
 
 .conte {
   width: 100%;
-  height: 100%;
-}
- header
-{
   height: 100vh;
 }
 .conte__video  {
@@ -64,7 +61,7 @@ body{
    text-align: center;
    border-radius: 30px;
    padding: 10px;
-   
+
     }
 li{
   padding: 3em;
@@ -93,7 +90,7 @@ li{
 /* estilos del titulo    */
 
 
-.conte__logo a{ 
+.conte__logo a{
   text-decoration: none;
 }
   .conte__logo--titulo  h1 {
@@ -108,7 +105,7 @@ li{
 .conte__logo--icono{
    height: 150px;
    width: 150px;
-  
+
 }
 /*-----------------------------------------------  estilos del menu de las redes*----------------------------------------------------------*/
 .navRedes__ul li  a:hover
@@ -120,7 +117,7 @@ li{
    margin-right: 20px;
    filter: invert(1);
    transform: scale(0.5);
-   transition: 0.5s; 
+   transition: 0.5s;
 }
 .navRedes{
    position: absolute;
@@ -133,17 +130,11 @@ li{
 }
 
  /*------------------------------------------ estilos del contenido main  iNDEX.HTML------------------------------------------------------*/
-.contenido{
-  position: relative;
-}
-h2{
- font-size: 40px;
- color: #bbd5f7;
- text-align: center;
-}
 
-.parafoPrincipalPresentacion{
+
+.container p {
   text-align: center;
+  max-width: 700px ;
   font-size: 23px;
   font-weight: bold;
   margin-top: 50px;
@@ -151,48 +142,26 @@ h2{
   color: rgb(128, 157, 170);
 }
 
+.parrafoPrincipalPresentacion h2 {
+  font-weight: 900;
+  display: inline-block;
+  margin-left: 7em;
+  padding-top: 5px ;
+} 
+.parrafoPrincipalPresentacion {
+
+  background-image: url(multimedia/imagenes/1.svg), url(multimedia/imagenes/normativa-drones-espana-aesa.jpg);
+  background-size: cover;
+  background-position: center;
+  max-width: 100%; 
+}
 
 
 /*------------------------------------------  estilos del footer de todas las paginas html ------------------------------------------------*/
 
-.footerUnico{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  margin-top: 70px;
-  }
-  
-  .footerUnico__home{
-     grid-area: 1 / 1 / 2 / 2;
-     display: flex;
-     justify-items: center;
-     margin-right: auto;
-     margin-left: auto;
-     width: 50px;
-     height: 40px;
-  }
-  .legales { 
-    grid-area: 2 / 1 / 3 / 2;
 
-  }
-  .legales a{
-    display: block;
-    text-decoration: none;
-    color: #fff;
-  }
-
-  .footer__copyright { 
-    grid-area: 3 / 1 / 4 / 2; 
-  }
-
-  .footerUnico__copyright p{
-    color: #fff;
-    text-align: end;
-    bottom: 0;
-  }
-
+/* ---------------------------------------- fin del footer 
+------------------------------------------*/ 
 
 .form-register {
   width: 400px;
@@ -204,7 +173,7 @@ h2{
   font-family: 'sans-serif';
   color: white;
   box-shadow: 7px 13px 37px rgb(71, 70, 143);
-  margin-bottom: 200px;
+  ;
 }
 .form-register h4 {
   font-size: 22px;
@@ -307,11 +276,11 @@ h2{
   color: rgb(128, 157, 170);
 }
 /* estilos de formulario de contacto (contactanos.html) */
-  .contenido__form{  
+  .contenido__form{
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
-  
+
   }
 
     .contenido__form--estilos{
@@ -379,7 +348,7 @@ h2{
     box-shadow: 7px 13px 37px rgba(26, 24, 131, 0.856);
 
   }
-  
+
 
 /*--------------------------------------------------------------------------------------------.     ---------------------------------   ----------------------------  ---------------------------------------------------------------------------------------------------------  --------------------------------------         ----             ---                                                     ------------------------------------------EstilosDeLaPaginaQuienesSomos------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -390,12 +359,12 @@ h2{
   margin-left: 20px;
   color: rgb(17, 93, 163);
   text-align: center;
-   
-  
+
+
 }
 
 .quienesSomos__article h2{
- 
+
   padding-top: 30px;
   text-decoration:overline;
 }
@@ -403,7 +372,7 @@ h2{
   margin-right: 50px;
   margin-top: -50px;
   width: 50;
-  height: 50; 
+  height: 50;
 }
 /*--------------------------------------------------------------------------------------------.     ---------------------------------   ----------------------------  ---------------------------------------------------------------------------------------------------------  --------------------------------------         ----             ---                                                     ------------------------------------------EstilosDeLaPaginaNuestrosServicios------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -414,7 +383,7 @@ h2{
     position: relative;
     width: 100%;
     flex-direction: row;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
     align-items: stretch;
     flex-wrap: wrap;
 }
@@ -456,7 +425,7 @@ h2{
     font-size: 1.7em;
     letter-spacing: 0.1em;
     margin: 1.5rem
-    
+
 }
 .wrap {
     height: 100%;
@@ -464,7 +433,7 @@ h2{
     align-items: center;
     justify-content: center;
   }
-  .button {
+  .button1 {
     min-width: 10rem;
     min-height: 60px;
     font-family: 'Nunito', sans-serif;
@@ -491,8 +460,8 @@ h2{
     position: relative;
     padding: 10px;
     }
-  
-  button::before {
+
+  .button1::before {
     content: '';
     border-radius:10rem;
     min-width:calc(200px + 12px);
@@ -506,17 +475,17 @@ h2{
     opacity: 0;
     transition: all .3s ease-in-out 0s;
   }
-  
-  .button:hover, .button:focus {
+
+  .button1:hover, .button1:focus {
     color: #ffffff;
     transform: translateY(-6px);
   }
-  
-  button:hover::before, button:focus::before {
+
+  .button1:hover::before, .button1:focus::before {
     opacity: 1;
   }
-  
-  button::after {
+
+  .button1::after {
     content: '';
     width: 30px; height: 30px;
     border-radius: 100%;
@@ -528,13 +497,13 @@ h2{
     transform: translate(-50%, -50%);
     animation: ring 1.5s infinite;
   }
-  
-  button:hover::after, button:focus::after {
+
+  .button1:hover::after, .button1:focus::after {
     animation: none;
     display: none;
   }
-  
-  @keyframes ring {
+
+ @keyframes ring {
     0% {
       width: 20px;
       height: 20px;
@@ -546,6 +515,7 @@ h2{
       opacity: 0;
     }
   }
+  
 .servicios__caja3{
     display: grid;
     grid-template-columns:repeat(2, 1fr);
@@ -561,7 +531,7 @@ h2{
     grid-row-end:2 ;
     height: 100%;
     width: 100%;
-    
+
 }
 .sevicios__caja3--parrafo--1{
     grid-column-start: 2;
@@ -611,7 +581,7 @@ h2{
                                        estilos de la pagina trabajos realizados
 
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/ 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 .background__main__trabajos{
@@ -689,10 +659,10 @@ figure .trasera {
     background: -ms-linear-gradient(left, rgba(46,74,117,1) 0%, rgba(46,74,117,0.63) 100%);
     background: linear-gradient(to right, rgba(46,74,117,1) 0%, rgba(46,74,117,0.63) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e4a75', endColorstr='#2e4a75', GradientType=1 );
-	
+
 }
 .contenedor_tarjeta:nth-child(2) figure .trasera{
-	
+
     background: rgba(116,59,154,1);
     background: -moz-linear-gradient(left, rgba(116,59,154,1) 0%, rgba(195,136,102,0.63) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(116,59,154,1)), color-stop(100%, rgba(195,136,102,0.63)));
@@ -710,7 +680,7 @@ figure .trasera {
     background: -o-linear-gradient(left, rgba(34,29,11,1) 0%, rgba(135,141,68,0.63) 100%);
     background: -ms-linear-gradient(left, rgba(34,29,11,1) 0%, rgba(135,141,68,0.63) 100%);
     background: linear-gradient(to right, rgba(34,29,11,1) 0%, rgba(135,141,68,0.63) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#221d0b', endColorstr='#878d44', GradientType=1 );	
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#221d0b', endColorstr='#878d44', GradientType=1 );
 }
 
 .contenedor_tarjeta:nth-child(4) figure .trasera{
@@ -732,7 +702,7 @@ figure .trasera {
     background: -o-linear-gradient(left, rgba(106,93,51,1) 0%, rgba(185,152,144,0.63) 100%);
     background: -ms-linear-gradient(left, rgba(106,93,51,1) 0%, rgba(185,152,144,0.63) 100%);
     background: linear-gradient(to right, rgba(106,93,51,1) 0%, rgba(185,152,144,0.63) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a5d33', endColorstr='#b99890', GradientType=1 );	
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a5d33', endColorstr='#b99890', GradientType=1 );
 }
 
 .contenedor_tarjeta:nth-child(6) figure .trasera{
@@ -743,7 +713,7 @@ figure .trasera {
     background: -o-linear-gradient(left, rgba(62,72,88,1) 0%, rgba(132,150,160,0.63) 100%);
     background: -ms-linear-gradient(left, rgba(62,72,88,1) 0%, rgba(132,150,160,0.63) 100%);
     background: linear-gradient(to right, rgba(62,72,88,1) 0%, rgba(132,150,160,0.63) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e4858', endColorstr='#8496a0', GradientType=1 );	
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e4858', endColorstr='#8496a0', GradientType=1 );
 }
 
 .contenedor_tarjeta:nth-child(7) figure .trasera{
@@ -754,7 +724,7 @@ figure .trasera {
     background: -o-linear-gradient(left, rgba(101,103,78,1) 0%, rgba(132,150,160,0.63) 100%);
     background: -ms-linear-gradient(left, rgba(101,103,78,1) 0%, rgba(132,150,160,0.63) 100%);
     background: linear-gradient(to right, rgba(101,103,78,1) 0%, rgba(132,150,160,0.63) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#65674e', endColorstr='#8496a0', GradientType=1 );	
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#65674e', endColorstr='#8496a0', GradientType=1 );
 }
 
 .contenedor_tarjeta:nth-child(8) figure .trasera{
@@ -765,7 +735,7 @@ figure .trasera {
     background: -o-linear-gradient(left, rgba(101,103,78,1) 0%, rgba(174,191,114,0.63) 100%);
     background: -ms-linear-gradient(left, rgba(101,103,78,1) 0%, rgba(174,191,114,0.63) 100%);
     background: linear-gradient(to right, rgba(101,103,78,1) 0%, rgba(174,191,114,0.63) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#65674e', endColorstr='#aebf72', GradientType=1 );	
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#65674e', endColorstr='#aebf72', GradientType=1 );
 }
 
 .contenedor_tarjeta:nth-child(9) figure .trasera{
@@ -776,7 +746,7 @@ figure .trasera {
     background: -o-linear-gradient(left, rgba(49,95,20,1) 0%, rgba(49,95,20,0.63) 100%);
     background: -ms-linear-gradient(left, rgba(49,95,20,1) 0%, rgba(49,95,20,0.63) 100%);
     background: linear-gradient(to right, rgba(49,95,20,1) 0%, rgba(49,95,20,0.63) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#315f14', endColorstr='#315f14', GradientType=1 );	
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#315f14', endColorstr='#315f14', GradientType=1 );
 }
 
 
@@ -788,7 +758,7 @@ figure .trasera {
     background: -o-linear-gradient(left, rgba(110,165,203,1) 0%, rgba(127,193,229,0.63) 100%);
     background: -ms-linear-gradient(left, rgba(110,165,203,1) 0%, rgba(127,193,229,0.63) 100%);
     background: linear-gradient(to right, rgba(110,165,203,1) 0%, rgba(127,193,229,0.63) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ea5cb', endColorstr='#7fc1e5', GradientType=1 );	
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ea5cb', endColorstr='#7fc1e5', GradientType=1 );
 }
 
 .contenedor_tarjeta:nth-child(11) figure .trasera{
@@ -799,7 +769,7 @@ figure .trasera {
     background: -o-linear-gradient(left, rgba(60,90,22,1) 0%, rgba(138,190,139,0.63) 100%);
     background: -ms-linear-gradient(left, rgba(60,90,22,1) 0%, rgba(138,190,139,0.63) 100%);
     background: linear-gradient(to right, rgba(60,90,22,1) 0%, rgba(138,190,139,0.63) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c5a16', endColorstr='#8abe8b', GradientType=1 );	
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c5a16', endColorstr='#8abe8b', GradientType=1 );
 }
 
 .contenedor_tarjeta:nth-child(12) figure .trasera{
@@ -810,7 +780,7 @@ figure .trasera {
     background: -o-linear-gradient(left, rgba(90,72,57,1) 0%, rgba(175,165,156,0.63) 100%);
     background: -ms-linear-gradient(left, rgba(90,72,57,1) 0%, rgba(175,165,156,0.63) 100%);
     background: linear-gradient(to right, rgba(90,72,57,1) 0%, rgba(175,165,156,0.63) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a4839', endColorstr='#afa59c', GradientType=1 );	
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a4839', endColorstr='#afa59c', GradientType=1 );
 }
 
 .contenedor_tarjeta:nth-child(13) figure .trasera{
@@ -821,7 +791,7 @@ figure .trasera {
     background: -o-linear-gradient(left, rgba(88,80,65,1) 0%, rgba(160,163,181,0.63) 100%);
     background: -ms-linear-gradient(left, rgba(88,80,65,1) 0%, rgba(160,163,181,0.63) 100%);
     background: linear-gradient(to right, rgba(88,80,65,1) 0%, rgba(160,163,181,0.63) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#585041', endColorstr='#a0a3b5', GradientType=1 );	
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#585041', endColorstr='#a0a3b5', GradientType=1 );
 }
 
 .contenedor_tarjeta:nth-child(14) figure .trasera{
@@ -832,7 +802,7 @@ figure .trasera {
     background: -o-linear-gradient(left, rgba(205,145,44,1) 0%, rgba(166,196,219,0.63) 100%);
     background: -ms-linear-gradient(left, rgba(205,145,44,1) 0%, rgba(166,196,219,0.63) 100%);
     background: linear-gradient(to right, rgba(205,145,44,1) 0%, rgba(166,196,219,0.63) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cd912c', endColorstr='#a6c4db', GradientType=1 );	
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cd912c', endColorstr='#a6c4db', GradientType=1 );
 }
 
 
@@ -868,8 +838,13 @@ figure .trasera p {
     padding: 2em;
 }
 }
+@media only screen and (max-width: 1000px){
+.parrafoPrincipalPresentacion {
+  background-color: none;
+}
+}
 
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 1000px) {
   .conte__menu--barraMenu li  {
     padding: 1em;
 }
@@ -925,14 +900,14 @@ figure .trasera p {
   }
 }
 /* le quito la animaciones a la pantalla pequeña por que la clase hover no se aplica */
-@media screen and (max-width: 992px) { 
+@media screen and (max-width: 992px) {
 	figure .trasera {
 		backface-visibility:visible;
 		transform: perspective(600px) rotateY(0deg);
 	}
 
 	.contenedor_tarjeta:hover figure {
-		transform: perspective(600px) rotateY(0deg);	
+		transform: perspective(600px) rotateY(0deg);
 	}
 
 }
@@ -943,15 +918,15 @@ figure .trasera p {
   padding: 0;
   position: relative;
   width: 100%;
-  justify-content: space-evenly; 
+  justify-content: space-evenly;
   align-items: stretch;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   flex-direction: row;
-  }        
+  }
 }
 @media screen and (min-width: 200px) and (max-width: 1156px){
   .servicios__caja1 {
-      
+
       flex-wrap: wrap;
       flex-direction: column;
   }

@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" href="multimedia/imagenes/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Visuales</title>
 </head>
@@ -25,7 +27,7 @@
                     <!-- target blank en un futuro cuando actualice la pagina y ponga artículos el usuario no abandone la pagina principal si cierra el articulo (el atributo "rel" es para evitar un supuesto ataque)-->
                    <li><a class="conte__menu" href="nuestrosservicios.html" target="_blank" rel="noopener noreferrer">Nuestros servicios</a></li>
                    <li ><a class="conte__menu" href="trabajosrealizados.html">Trabajos realizados</a></li>
-                   <li ><a class="conte__menu" href="contactanos.html">Contactanos</a></li>
+                   <li ><a class="conte__menu" href="contactanos.html">Contáctanos</a></li>
                 </ul>
               </nav>     
           </div>             
@@ -44,53 +46,68 @@
   
   </header>
  
-  <main class="principal__index">
-  <section class="contenido">
-    <h2>
-      Nuestros Objetivos
-    </h2>
-      <!-- <img class="imagenParrafo" src="multimedia/imagenes/foto.de.parrafo.principal.png" alt="" width="600" height="600"> -->
-      <p class="parafoPrincipalPresentacion" >
-        Hoy un video o una fotografía realizada con el Dron presenta una forma moderna de comunicar y presentar tu negocio o tu proyecto. Las diferentes perspectivas, la investigación sin precedentes con el Dron, harán que la presentación sea sorprendente y cautivadora.
-        <br>
-        Visuales ofrece servicios de video y fotografía traduciendo en imágenes la esencia de la comunicación. Visuales se asegura de escuchar las necesidades específicas, realizar el presupuesto en el lugar de interés para el rodaje, evaluar la posibilidad real de orientar la toma más acorde a tus necesidades, evaluar el tiempo y la mejor ejecución lumínica de las características del objeto o lugar de interés.
-         <br>
-        Visuales está en posesión de la autoriszación de la Administración Nacional de Aviación Civil y la cobertura del seguro para este tipo de operaciones y tiene la competencia necesaria para solicitar y obtener de forma rápida y segura las autorizaciones de las Autoridades de Seguridad Pública para realizar vuelos también en la ciudad.
-      </p>
-      <!-- formulario de contacto sin conexion  por el momento al email -->
-      <form >
-         <section class="form-register">
-           <h4>Contactanos</h4>
-           <label for="name">Nombre:</label>
-           <input class="controls" type="text" name="nombres" id="nombre" placeholder="Nombre">
-           <label for="email">Email:</label>
-           <input class="controls" type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com">
-           <label for="number">Telefono: </label>
-           <input class="controls" type="tel" name="telefono" id="telefono" placeholder="Telefono">
-           <label for="mensaje">Mensaje:</label>
-           <textarea class="controls" id="texArea" cols="50" rows="10" placeholder="Dejanos tu mensaje"></textarea>              
-           <label for="checkbox"> <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p></label>
-           <input  type="checkbox" id="checkbox" required > 
-           <label for="boton"></label>
-           <input class="boton" id="reset" type="reset" name="reset" value="reset" >
-           <input class="boton" id="submit" name="submit" type="submit" value="Enviar">        
-        </section>
-       </form>        
+  <main >
+      <div container text-start my-4 >
+          <div class="container  parrafoPrincipalPresentacion lead fs-3">
+           <div>
+             <h2 class="pt-5 ">Nuestros Objetivos  </h2>
+           </div> 
+              <p class=" pb-5 " >
+                Hoy un video o una fotografía realizada con un Dron presenta una forma moderna de comunicar y presentar tu negocio o tu proyecto en diferentes perspectivas, la investigación sin precedentes con el Dron, harán que la presentación sea sorprendente y cautivadora.
+                <br>
+                Visuales ofrece servicios de video y fotografía <br> traduciendo en imágenes la esencia de la <br> comunicación. Visuales se asegura de escuchar las necesidades específicas, realizar el presupuesto en el lugar de interés para el rodaje, evaluar la posibilidad real de orientar la toma más acorde a tus necesidades, evaluar el tiempo y la mejor ejecución lumínica de las características del <br>objeto o  lugar de interés.
+              <br>
+                Visuales está en posesión de la autorización de la Administración Nacional de Aviación Civil y la cobertura del seguro para este tipo de operaciones y tiene la competencia necesaria para solicitar y obtener de forma rápida y segura las autorizaciones de las Autoridades de Seguridad Pública para realizar vuelos también en la ciudad.
+              </p>
+          </div>
+      </div>  
 </main>
        <!-- pie de pagina -->
-       <div  >
-        <footer class="footerUnico">
-            <div class="footerUnico__home" >  
-                <a href="index.html"><img src="multimedia/imagenes/iconos/inicio.png" alt="" width="50px" height="40px"></a> 
-            </div>
-            <div class="footerUnico__copyright">
-              <p>copyright  © Visuales 2022</p>
-            </div  >
-            <div class="legales" >
-              <a href="privacidad.html">Privacy Policy</a>
-              <a href="terminos-y-condiciones.html">Terms of Service</a>        
-           </div> 
-        </footer>
-      </div>
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+        <div class="container ">
+          <section class="mb-1">
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fa fa-google"></i
+            ></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fa fa-instagram"></i
+            ></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fa fa-github"></i
+            ></a>
+          </section>
+          <section class="">
+            <form action="">
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-6 col-6">
+                  <div class="form-outline form-white mb-4">
+                     <p class="pt-2">
+                    <strong>Suscríbete a nuestro Newsletter</strong>
+                    </p>
+                    <input type="email" id="form5Example21" placeholder="Ejemplo@ejemplo.com" class="form-control" />
+                    <label class="form-label" for="form5Example21"></label>
+                    <button type="submit" class="btn btn-outline-light mt-4">
+                    Suscríbete
+                  </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+        <div class="text-center p-3">
+          © 2022 Copyright:
+          <a class="text-white" href="#">Visuales</a>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
