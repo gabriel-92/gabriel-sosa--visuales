@@ -51,6 +51,12 @@ body{
 .navbar li :hover {
   color: #fff !important;
 }
+li{
+
+
+margin: 2em;
+display: inline;
+font-size: 1em;}
 .navbar-toggler{
   background-color: #3CACAE; 
   border-radius: 20px;
@@ -165,8 +171,14 @@ li{
 
 
 /*------------------------------------------  estilos del footer de todas las paginas html ------------------------------------------------*/
-.row{
-  --bs-gutter-x: 0;
+
+.form-outline{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.textofooter {
+  margin: 10px !important;
 }
 .bg-light {
   background: rgba(200, 244, 249, 1);
@@ -866,14 +878,21 @@ figure .trasera p {
     justify-content: center;
   }
   .conte__logo--titulo h1 {
-    font-size: 1rem;
-}
+    text-align: center;
+  } 
+
 }
 @media only screen and (max-width: 1000px) {
   .conte__menu--barraMenu li  {
     padding: 1em;
 }
 
+.navbar-collapse {
+  background-color:  #fff !important;
+  z-index: 20;
+  opacity: 0.8;
+  text-align: center;
+}
 }
 /* esta media query es para mas adelante agrgarle java scrip y hacer un menu interactivo (cuando lo aprenda xD ) */
 
