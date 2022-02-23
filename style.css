@@ -1,23 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Redressed&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-
 }
 
-  main {
-  /*  fondo background inyectado */
-    text-decoration: none;
-    background-color: #000000;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%231190f4' fill-opacity='0.09' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    }
-
-
-/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
                                        ESTILOS DE LA PAGINA index.html
                                                   &
@@ -27,119 +15,132 @@
 .conte {
   width: 100%;
   height: 100vh;
+  background-color: #000;
 }
 .conte__video  {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
   opacity: 0.8;
   z-index: 0;
 }
-/* sobre caoa del video */
+/* sobre capa del video */
 .conte__overlay{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background: #8cbdf5;
-  mix-blend-mode: overlay;
+  height: 100vh;
+  background: #3CACAE;
+  mix-blend-mode: hard-light;
 }
 /* animacion menu */
-.conte__menu--barraMenu li :hover {
-  transition:0.50s;
-  background-color: rgba(5, 176, 255, 0.815);
-}
-/* estilos menu */
-.conte__menu--barraMenu li a {
-   text-transform: capitalize;
-   text-decoration: none;
-   color: rgb(245, 245, 245);
-   text-align: center;
-   border-radius: 30px;
-   padding: 10px;
+.navbar li :hover {
+  color: #fff !important;
 
-    }
-li{
-  padding: 3em;
-  display: inline;
 }
-.conte__menu--barraMenu {
-   display: flex;
-   justify-content: space-around;
-   width: 100%;
-   margin: 0 auto;
-   z-index: 10000;
-   position: absolute;
-   top: 30px;
-  }
+
+/* estilos menu */
+.nav-link {
+  font-size: 1.2em;
+  color: #000 !important;
+  font-weight: 700;
+}
+li{
+  margin: 2em;
+  display: inline;
+  font-size: 1em;
+}
+.fondo__navBar{
+  height: 70px;
+  background: rgba(60, 172, 174, 1);
+  background: -moz-linear-gradient(45deg, rgba(60, 172, 174, 1) 0%, rgba(200, 244, 249, 1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(60, 172, 174, 1)), color-stop(100%, rgba(200, 244, 249, 1)));
+  background: -webkit-linear-gradient(45deg, rgba(60, 172, 174, 1) 0%, rgba(200, 244, 249, 1) 100%);
+  background: -o-linear-gradient(45deg, rgba(60, 172, 174, 1) 0%, rgba(200, 244, 249, 1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(60, 172, 174, 1) 0%, rgba(200, 244, 249, 1) 100%);
+  background: linear-gradient(45deg, rgba(60, 172, 174, 1) 0%, rgba(200, 244, 249, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3cacae', endColorstr='#c8f4f9', GradientType=1);
+}
+.li {
+  margin: 2em;
+  display: inline;
+  font-size: 1em;
+}
+
+.collapse {
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbar-brand {
+  font-weight: 900;
+  font-size: 2rem;
+  border-radius: 30px;
+}
 /* estilo logo */
 .conte__logo {
-   display: flex;
-   align-items: center;
-   top: 250px;
-   justify-content: center;
-   position: relative;
-   z-index: 10;
-   cursor: pointer;
-   text-decoration: none;
+    display: flex;
+    align-items: center;
+    top: 250px;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    text-decoration: none;
   }
 /* estilos del titulo    */
+
 
 
 .conte__logo a{
   text-decoration: none;
 }
   .conte__logo--titulo  h1 {
-  color: #fff;
-  text-transform: capitalize;
-   z-index: 10;
-   font-size: 3em;
-   font-weight: 700;
-   line-height: 1em;
+    color: #fff;
+    text-transform: capitalize;
+    z-index: 10;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1em;
 
 }
-.conte__logo--icono{
-   height: 150px;
-   width: 150px;
 
-}
 /*-----------------------------------------------  estilos del menu de las redes*----------------------------------------------------------*/
 .navRedes__ul li  a:hover
 {
-   transform: scale(0.5) translateY(-15px);
+    transform: scale(0.5) translateY(-15px);
 }
 .navRedes__ul li a{
-   display: inline-block;
-   margin-right: 20px;
-   filter: invert(1);
-   transform: scale(0.5);
-   transition: 0.5s;
+    display: inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.5);
+    transition: 0.5s;
 }
 .navRedes{
-   position: absolute;
-   display: inline;
-   z-index: 10;
-   bottom: 10em;
-   right: 20px;
-   height: -40;
-
+    position: absolute;
+    display: inline;
+    z-index: 10;
+    bottom: 10em;
+    right: 20px;
+    height: -40;
 }
 
- /*------------------------------------------ estilos del contenido main  iNDEX.HTML------------------------------------------------------*/
+/*------------------------------------------ estilos del contenido main  iNDEX.HTML------------------------------------------------------*/
 
 
 .container p {
-  text-align: center;
-  max-width: 700px ;
+  text-align: left;
+  max-width: 600px ;
   font-size: 23px;
   font-weight: bold;
   margin-top: 50px;
-  margin-left: 10px;
-  color: rgb(128, 157, 170);
+  margin-left: 3.5rem;
+  color: #3CACAE;
 }
 
 .parrafoPrincipalPresentacion h2 {
@@ -147,23 +148,40 @@ li{
   display: inline-block;
   margin-left: 7em;
   padding-top: 5px ;
-} 
+}
 .parrafoPrincipalPresentacion {
 
   background-image: url(multimedia/imagenes/1.svg), url(multimedia/imagenes/normativa-drones-espana-aesa.jpg);
   background-size: cover;
   background-position: center;
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 
 /*------------------------------------------  estilos del footer de todas las paginas html ------------------------------------------------*/
 
+.form-outline{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.textofooter {
+  margin: 10px !important;
+}
+.fondo__footer {
+  background: rgba(200, 244, 249, 1);
+  background: -moz-linear-gradient(45deg, rgba(200, 244, 249, 1) 0%, rgba(60, 172, 174, 1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(200, 244, 249, 1)), color-stop(100%, rgba(60, 172, 174, 1)));
+  background: -webkit-linear-gradient(45deg, rgba(200, 244, 249, 1) 0%, rgba(60, 172, 174, 1) 100%);
+  background: -o-linear-gradient(45deg, rgba(200, 244, 249, 1) 0%, rgba(60, 172, 174, 1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(200, 244, 249, 1) 0%, rgba(60, 172, 174, 1) 100%);
+  background: linear-gradient(45deg, rgba(200, 244, 249, 1) 0%, rgba(60, 172, 174, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c8f4f9', endColorstr='#3cacae', GradientType=1);
+}
+/* ---------------------------------------- fin del footer
+------------------------------------------*/
 
-/* ---------------------------------------- fin del footer 
-------------------------------------------*/ 
-
-.form-register {
+/* .form-register {
   width: 400px;
   background: #24303c;
   padding: 30px;
@@ -226,7 +244,7 @@ li{
   box-shadow: 7px 13px 37px rgb(71, 70, 143);
 
 }
-
+ */
 
 
 
@@ -236,69 +254,55 @@ li{
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
-
-
-.contacto h1{
-  padding-top: 20px;
-  padding-left: 10px;
-  font-size: 40px;
-  color: rgb(255, 255, 255);
-  line-height: 1em;
-  font-family: 'Poppins'
+.containerContacto p {
+  color: #3CACAE !important;
+  
 }
-.contacto p {
-  font-size: 25px;
-  font-weight: bold;
-  margin-top: 50px;
-  margin-left: 20px;
-  color: rgb(128, 157, 170);
+.containerContacto{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+  }
+
+.containerContacto h2{
+  padding-left:2em ;
   text-align: center;
 }
-.contacto h2{
-  font-size: 30px;
-  color: #5d87fa;
-  margin-left: 30px;
+.containerContacto__tituloPrincipal{
+  text-align: center;
+}
+.containerContacto__texto {
+  display: flex;
+  align-content: center;
+  text-align: center;
 }
 
-.contacto h3{
-  font-size: 25px;
-  font-weight: bold;
-  margin-top: 50px;
-  margin-left: 10px;
-  color: rgb(248, 248, 248);
-  padding-left: 40px;
-}
-.contacto h5{
-  font-size: 25px;
-  font-weight: bold;
-  margin-top: 50px;
-  margin-left: 10px;
-  color: rgb(128, 157, 170);
-}
 /* estilos de formulario de contacto (contactanos.html) */
   .contenido__form{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
 
   }
+  
 
     .contenido__form--estilos{
-    width: 20rem;
+    width: 30rem;
     background: #24303c;
-    padding: 30px;
-    margin-left: 20em;
-    margin-top: 100px;
+    padding: 10px;
+    /* margin-left: 50px;
+    margin-top: 100px; */
     border-radius: 4px;
     font-family: 'sans-serif';
     color: white;
     box-shadow: 7px 13px 37px rgb(71, 70, 143);
-    left:30px;
+  
     margin: 20px;
   }
   .contenido__form--estilos h4 {
     font-size: 22px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .controls {
     width: 100%;
@@ -329,51 +333,39 @@ li{
     color: white;
     text-decoration: underline;
   }
+
+
+
+
+
   #texArea{
     resize:none;
     background-color: #24303c ;
     border: 1px solid #1f53c5;
     font-family: 'sans-serif';
 
+}
 
-  }
-  .contenido__form--estilos .boton  {
-    width: 100%;
-    background: #1f53c5;
-    border: none;
-    padding: 5px;
-    color: white;
-    margin: 16px 0;
-    font-size: 15px;
-    box-shadow: 7px 13px 37px rgba(26, 24, 131, 0.856);
-
-  }
 
 
 /*--------------------------------------------------------------------------------------------.     ---------------------------------   ----------------------------  ---------------------------------------------------------------------------------------------------------  --------------------------------------         ----             ---                                                     ------------------------------------------EstilosDeLaPaginaQuienesSomos------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-.quienesSomos__article p{
-  font-size: 22px;
-  font-weight: bold;
-  margin-top: 50px;
-  margin-left: 20px;
-  color: rgb(17, 93, 163);
-  text-align: center;
-
-
+.quienesSomos__article  {
+  display: flex;
+  justify-content: center;
+;
+  color: #3CACAE;
+  
+}
+.quienesSomos__article__caja__texto {
+  width: 30em;
+}
+.quienesSomos__article__caja__texto p{
+  font-weight: 600;
+  font-size: 1.5em;
+  text-align: left;
 }
 
-.quienesSomos__article h2{
-
-  padding-top: 30px;
-  text-decoration:overline;
-}
- .quienesSomos__article--inicioQuienes img{
-  margin-right: 50px;
-  margin-top: -50px;
-  width: 50;
-  height: 50;
-}
 /*--------------------------------------------------------------------------------------------.     ---------------------------------   ----------------------------  ---------------------------------------------------------------------------------------------------------  --------------------------------------         ----             ---                                                     ------------------------------------------EstilosDeLaPaginaNuestrosServicios------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
@@ -388,7 +380,7 @@ li{
     flex-wrap: wrap;
 }
 .servicios__caja1 h2{
-  color: #0a60c2;
+  color: #3CACAE;
 }
 .servicios__titulos_fondo{
     background-color: #d6d6d6;
@@ -411,13 +403,21 @@ li{
     text-align: center;
 }
 .servicios__caja2{
+    background: rgba(188, 196, 196, 1);
+    background: -moz-linear-gradient(45deg, rgba(188, 196, 196, 1) 0%, rgba(226, 232, 232, 1) 65%, rgba(247, 252, 252, 1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(188, 196, 196, 1)), color-stop(65%, rgba(226, 232, 232, 1)), color-stop(100%, rgba(247, 252, 252, 1)));
+    background: -webkit-linear-gradient(45deg, rgba(188, 196, 196, 1) 0%, rgba(226, 232, 232, 1) 65%, rgba(247, 252, 252, 1) 100%);
+    background: -o-linear-gradient(45deg, rgba(188, 196, 196, 1) 0%, rgba(226, 232, 232, 1) 65%, rgba(247, 252, 252, 1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(188, 196, 196, 1) 0%, rgba(226, 232, 232, 1) 65%, rgba(247, 252, 252, 1) 100%);
+    background: linear-gradient(45deg, rgba(188, 196, 196, 1) 0%, rgba(226, 232, 232, 1) 65%, rgba(247, 252, 252, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bcc4c4', endColorstr='#f7fcfc', GradientType=1);
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: space-evenly;
     padding: 130px 10%;
     overflow: hidden;
-    color: #fff ;
+    color: #000;
 }
 .servicios__caja2 p{
     font-family: 'Grechen Fuemen', cursive;
@@ -433,7 +433,7 @@ li{
     align-items: center;
     justify-content: center;
   }
-  .button1 {
+.button {
     min-width: 10rem;
     min-height: 60px;
     font-family: 'Nunito', sans-serif;
@@ -442,15 +442,7 @@ li{
     letter-spacing: 1px;
     font-weight: 900;
     color: #000000;
-    background: #4f92d1;
-    background: rgba(13,82,219,1);
-    background: -moz-linear-gradient(left, rgba(13,82,219,1) 0%, rgba(73,165,191,0.67) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(13,82,219,1)), color-stop(100%, rgba(73,165,191,0.67)));
-    background: -webkit-linear-gradient(left, rgba(13,82,219,1) 0%, rgba(73,165,191,0.67) 100%);
-    background: -o-linear-gradient(left, rgba(13,82,219,1) 0%, rgba(73,165,191,0.67) 100%);
-    background: -ms-linear-gradient(left, rgba(13,82,219,1) 0%, rgba(73,165,191,0.67) 100%);
-    background: linear-gradient(to right, rgba(13,82,219,1) 0%, rgba(73,165,191,0.67) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d52db', endColorstr='#49a5bf', GradientType=1 );
+    background-color: #3CACAE;
     border: none;
     border-radius: 100px;
     /* box-shadow: 12px 12px 24px rgba(79, 179, 209, 0.64); */
@@ -461,13 +453,13 @@ li{
     padding: 10px;
     }
 
-  .button1::before {
+  .button::before {
     content: '';
     border-radius:10rem;
     min-width:calc(200px + 12px);
     min-height: calc(60px + 12px);
-    border: 5px solid #166ea8;
-    box-shadow: 0 0 60px rgba(0, 132, 255, 0.64);
+    border: 5px solid #0A758F;
+    box-shadow: 0 0 60px #3CACAE;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -476,20 +468,20 @@ li{
     transition: all .3s ease-in-out 0s;
   }
 
-  .button1:hover, .button1:focus {
-    color: #ffffff;
+  .button:hover, .button:focus {
+    color: #fff;
     transform: translateY(-6px);
   }
 
-  .button1:hover::before, .button1:focus::before {
+  .button:hover::before, .button:focus::before {
     opacity: 1;
   }
 
-  .button1::after {
-    content: '';
+  .button::after {
+    content: "";
     width: 30px; height: 30px;
     border-radius: 100%;
-    border: 6px solid #1a5780;
+    border: 6px solid #3CACAE;
     position: absolute;
     z-index: -1;
     top: 50%;
@@ -498,30 +490,13 @@ li{
     animation: ring 1.5s infinite;
   }
 
-  .button1:hover::after, .button1:focus::after {
-    animation: none;
-    display: none;
-  }
-
- @keyframes ring {
-    0% {
-      width: 20px;
-      height: 20px;
-      opacity: 1;
-    }
-    100% {
-      width: 400px;
-      height: 400px;
-      opacity: 0;
-    }
-  }
-  
 .servicios__caja3{
     display: grid;
     grid-template-columns:repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     align-items: center;
     gap: 1em;
+    background-color: #fff;
 }
 
 .servicios__caja3--foto--1{
@@ -568,11 +543,10 @@ li{
     grid-row-end: 4;
 }
 .servicios__caja3 p {
-    font-family: 'Redressed', cursive;
-    font-weight: 900;
+    font-family:'Poppins',sans-serif;
+    font-weight: 600;
     font-size: 1.5em;
-    color: rgb(50, 103, 201);
-    /* display: block; */
+    color:#000;
     margin: 1.5rem;
 }
 
@@ -592,6 +566,7 @@ li{
   font-family: 'Poppins', sans-serif;
   color: #1a5780;
   margin-top: 30px;
+  text-transform: capitalize;
 }
 /* -----------------------------------------------------------------------------------------------------------------------------------estilos del contenedor de las animaciones de la pagina nuestros servicios ------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -832,37 +807,52 @@ figure .trasera p {
 /*--------------------------------------------------------------------------------------------.     ---------------------------------   ----------------------------  ---------------------------------------------------------------------------------------------------------  --------------------------------------         ----             ---                                                     -----------------------------------------""""Media-Queries""""------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
-/* medidas para pantalla medianas,modifica el pading de los elementos li */
-@media only screen and (max-width: 1190px) {
-  .conte__menu--barraMenu li  {
-    padding: 2em;
-}
-}
+
 @media only screen and (max-width: 1000px){
 .parrafoPrincipalPresentacion {
-  background-color: none;
+  background-image: none;
+  background-color: #fff;
 }
 }
+@media only screen and (max-width: 600px){
+  .parrafoPrincipalPresentacion h2 {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .conte__logo--titulo h1 {
+    text-align: center;
+  }
 
+}
 @media only screen and (max-width: 1000px) {
   .conte__menu--barraMenu li  {
+    width: 100px !important;
     padding: 1em;
 }
+
+.navbar-collapse {
+  background-color:  rgb(65, 202, 191) !important;
+  z-index: 11;
+  opacity: 0.8;
+  text-align: center;
+  width: 30px !important;
+  }
 }
+
 /* esta media query es para mas adelante agrgarle java scrip y hacer un menu interactivo (cuando lo aprenda xD ) */
 
-@media only screen and (max-width: 871px) {
-  .conte__menu--barraMenu{
-    display: none;
-  }
-  .navRedes__ul li{
-    padding: 2em;
-  }
+@media only screen and (max-width: 871px) and (min-width: 600px) {
+
+
   /* mapa contactanos */
   .contenido__form
   {
 
     flex-direction: column;
+  }
+  .conte__logo--titulo h1{
+  font-size: 2rem;
   }
 }
 
@@ -870,6 +860,7 @@ figure .trasera p {
 @media only screen and (max-width: 470px){
   .navRedes__ul li{
   padding: 1em;
+  margin: 0;
 }
 /* form de contactanos.html */
 .form-register {
@@ -878,6 +869,9 @@ figure .trasera p {
 /* paraquitar el logo en una resulucion reducida,para una mejor experiencia del usuario */
   .conte__logo--icono{
     display: none;
+  }
+  .navbar-brand{
+    margin-left: 1rem;
   }
   /* modificacion del titulo */
   h1{
@@ -908,8 +902,12 @@ figure .trasera p {
 
 	.contenedor_tarjeta:hover figure {
 		transform: perspective(600px) rotateY(0deg);
-	}
 
+	}
+  .quienesSomos__article__caja__texto p{
+    margin-left: 1em;
+    margin-right: 0.5em;
+  }
 }
 /* pagina nuestros servicios */
 @media screen and (max-width: 950px) {
@@ -929,6 +927,9 @@ figure .trasera p {
 
       flex-wrap: wrap;
       flex-direction: column;
+  }
+  .servicios__caja2{
+    flex-direction: column;
   }
 }
 
